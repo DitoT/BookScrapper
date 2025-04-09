@@ -1,9 +1,4 @@
-﻿# import os
-# import json
-# import requests
-# from bs4 import BeautifulSoup
-# import re
-from utils.file_handler import load_data
+﻿from utils.file_handler import load_data
 
 BASE_URL = "http://books.toscrape.com/"
 
@@ -41,6 +36,6 @@ def calculate_average_price(books):
     return total_price / len(books)  # Return the average price
 
 
-# Now, call the analyze_data function to analyze the saved data
+
 if __name__ == "__main__":
     analyze_data("data/output.json")

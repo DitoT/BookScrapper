@@ -17,10 +17,10 @@ def main():
         books_dict = [book.to_dict() for book in book_collection.books]
 
         # Save the books to a JSON file
-        save_data(books_dict, "data/output.json")
+        save_data(books_dict, "../data/output.json")
 
         # Perform analysis
-        analysis = analyze_data("data/output.json")
+        analysis = analyze_data("../data/output.json")
         print("Analysis Result:", analysis)
     else:
         print("Failed to collect data.")
